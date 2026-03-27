@@ -1,0 +1,36 @@
+[BASE]
+LocalPlayer=0xA74BD8
+EntityList=0x4D2F030
+
+[POINTER]
+Health=LocalPlayer:0x1C0
+Energy=LocalPlayer:0x1F0
+XCoord=LocalPlayer:0x188,0x2C
+ZCoord=LocalPlayer:0x188,0x30
+
+MWeapon=LocalPlayer:0x5AC
+QWeapon=LocalPlayer:0x2190
+WWeapon=LocalPlayer:0x21F8
+EWeapon=LocalPlayer:0x2260
+
+PhysicalDamage=LocalPlayer:0x628
+AbilityDamage=LocalPlayer:0x658
+Speed=LocalPlayer:0x610
+JumpHeight=LocalPlayer:0x620
+
+[STATIC]
+SoulChips=0x680278
+Memoria=0xA75274
+Bolts=0x4AFDBFC
+TitanShards=0x9D10F4
+Color=0x4A7F110
+IonCube=0xA77530
+BlueCube=0xA75240
+
+[PATCH]
+EnergyPatch=0x5F14AC|C7 43 24 99 00 00 00 90 90 90 90|44 8B 63 24 C6 05 40 C7 50 04 01
+JumpPatch=0x4E2EE3|74 54|75 54
+InstantKill=0x59055F|C7 83 C0 01 00 00 00 00 00 00|48 89 83 C0 01 00 00 48 85 ED
+ScrapCmp=0x4BEAE5
+Scrap=0x4BEAF3
+
